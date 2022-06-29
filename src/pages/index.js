@@ -77,7 +77,7 @@ const moreLinks = [
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageHeading="Home Page" pageTitle = "Home">
     <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className={styles.textCenter}>
       <StaticImage
