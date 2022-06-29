@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import Button from '../components/button'
 
 const links = [
   {
@@ -30,6 +31,12 @@ const links = [
     url: "https://www.gatsbyjs.com/cloud",
     description:
       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+  },
+  {
+    text: "Blog",
+    url: "http://localhost:8000/blog",
+    description:
+      "Check out my blog posts!",
   },
 ]
 
@@ -71,7 +78,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className={styles.textCenter}>
       <StaticImage
         src="../images/example.png"
@@ -85,6 +92,7 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
+      <Button buttonText="Click me" />
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
