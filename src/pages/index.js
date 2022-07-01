@@ -1,13 +1,22 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import Button from '../components/button'
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+  {
+    file(name: {eq: "Nonce-Features-In-Reference-Games"}) {
+      publicURL
+    }
+  }
+  `)
+  console.log(data);
+  return ( (
   <Layout pageHeading="Home Page" pageTitle = "Home">
     <Seo title="Home" keywords={[`MIT`, `computer science`, `CS`]} />
     <body
@@ -21,7 +30,7 @@ const IndexPage = () => (
             <h1 style={{ fontFamily: "sans-serif",paddingRight : '5px'}}>Hi! I'm Dolapo Adedokun.</h1>
             <p>I'm a <a href="https://news.mit.edu/2021/adedolapo-adedokun-mitchell-scholar-1122"> Mitchell Scholar</a> at Trinity College Dublin and I studied CS at MIT. In the past I've worked on: </p>
             <ul>
-                <li>Nonce Features in Reference Games (<a href="Nonce-Features-Reference-Games.pdf"><em>paper</em></a>) </li>
+                <li>Nonce Features in Reference Games (<a href={data.file.publicURL}><em>paper</em></a>) </li>
                 <li>reinventing internal data management at Salesforce</li>
                 <li>internal tool development at Slack</li>
                 <li>improving data pipeline migration at Visa</li>
@@ -36,5 +45,7 @@ const IndexPage = () => (
   </Layout>
 
 )
-
+  )
+}
+  
 export default IndexPage
