@@ -41,11 +41,17 @@ const Layout = ({ pageTitle, pageHeading, children }) => {
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
+            gridArea: 'footer'
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
+          
+          © dolapobj at gmail com
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.linkedin.com/in/dolapobj/">linkedin</a>
+          {` `}
+          <a href="https://www.twitter.com/dolapobj/"> twitter</a>
+          {` `}
+          <a href="https://github.com/dolapobj"> github</a>
         </footer>
       </div>
     </>

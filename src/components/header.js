@@ -22,6 +22,7 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
+    {/*
     <ul className= {navLinks}>
       <li 
         className = {navLinkItem}><Link
@@ -48,6 +49,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </li>
     </ul>
+      */}
   </header>
 )
 

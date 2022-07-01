@@ -30,6 +30,13 @@ module.exports = {
       },
     },
     {
+			resolve: 'gatsby-plugin-pdf',
+			options: {
+				paths: [`${__dirname}/src/data/pdf`],
+				outputPath: '/public/exports',
+			},
+		},
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
