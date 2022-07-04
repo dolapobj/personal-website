@@ -28,7 +28,7 @@ const Layout = ({ pageTitle, pageHeading, children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+      <div class = "container"
         style={{
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,

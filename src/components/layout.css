@@ -2,7 +2,7 @@
   --border-radius: 4px;
   --color-text: #333;
   --color-primary: #8e6237;
-  --color-code-bg: #fff4db;
+  --color-code-bg: #f9edd0;
   --color-code: #8e6237;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -43,6 +43,13 @@ body {
   font-size: var(--font-lg);
   margin: 0;
   word-wrap: break-word;
+  min-height: 81vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
 }
 a {
   background-color: transparent;
@@ -228,22 +235,4 @@ pre tt:after {
   min-height: 100%;
   height: 100%;
   margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
-}
-footer, push {
-  height: 155px; /* .push must be the same height as .footer */
-}
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
 }
