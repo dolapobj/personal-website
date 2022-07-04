@@ -21,7 +21,8 @@ const IndexPage = () => {
         <div id='left'></div>
         <div id='middle'>
             <h1> Hi! I'm Dolapo Adedokun.</h1>
-            <p>I'm a <a href="https://news.mit.edu/2021/adedolapo-adedokun-mitchell-scholar-1122"> Mitchell Scholar</a> at Trinity College Dublin and I studied CS at MIT. In the past I've worked on: </p>
+            <p>I'm a <a href="https://news.mit.edu/2021/adedolapo-adedokun-mitchell-scholar-1122"> Mitchell Scholar</a> at Trinity College Dublin and I studied CS at MIT. </p>
+            <p>In the past I've worked on: </p>
             <ul>
                 <li>Nonce Features in Reference Games (<a href={data.file.publicURL}><em>paper</em></a>) </li>
                 <li>Reinventing internal data management at Salesforce</li>
