@@ -3,56 +3,57 @@ import { kebabCase } from 'lodash';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import { GatsbyImage}  from 'gatsby-plugin-image';
+import {container, heading,navLinks,navLinkItem, navLinkText } from "../components/layout.module.css"
+
 const BlogPage = ({ data, pageContext }) => {
     const posts = data.allMarkdownRemark.edges;
     const { currentPage, numPages } = pageContext;
-    const pathPrefix = 'blog';
+    const pathPrefix = '..';
     const isFirst = currentPage === 1;
     const isLast = currentPage === numPages;
     const prevPage =
       currentPage - 1 === 1
         ? `${pathPrefix}/`
         : `${pathPrefix}/${(currentPage - 1).toString()}`;
-    const nextPage = `${pathPrefix}/${(currentPage + 1).toString()}`;
+    const nextPage = currentPage === 1 ? `${"../blog"}/${(currentPage + 1).toString()}`
+    : `${"../"}${(currentPage + 1).toString()}`;
     return (
         <Layout>
+          <h1> Blog </h1>
           <div className="post-list">
             {posts.map(post => (
               <div key={post.node.id} className="post-list__item">
                 <div className="post-list__thumbnail">
-              <Link to={post.node.fields.slug}>
-                <GatsbyImage
-                  image={post.node.frontmatter.thumbnail.childImageSharp.gatsbyImageData}
-                />
-              </Link>
             </div>
             <div className="post-list__content">  
-                <h2>{post.node.frontmatter.title}</h2>
+                <Link to={post.node.fields.slug}>
+                <h2 style={{marginBottom: 3}}>
+                {post.node.frontmatter.title}
+                </h2>
+                </Link>
                 {post.node.frontmatter.tags ? (
-                <div className="tags-container">
-                  <ul className="taglist">
+                <div style={{marginBottom:1}}className="container">
+                  {post.node.frontmatter.date} {"|"}
+                  <ul className  = {navLinks} style={{marginBottom:2, marginLeft: 10,listStyle: 'none',display: 'inline-block'}}>
                     {post.node.frontmatter.tags.map(tag => (
-                      <li key={tag + `tag`}>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      <li style={{marginRight: 10,display: 'inline-block'
+                      }}key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link> {` `}
                       </li>
                     ))}
                   </ul>
                 </div>
               ) : null}
-                <p>{post.node.frontmatter.date}</p>
-                <div className="post-list__excerpt">
-                  <p>{post.node.excerpt}</p>
-                </div>
-                <Link className="button button--small" to={post.node.fields.slug}>
-                Read More
-              </Link>
+                <p style={{marginTop:4}}className="post-list__excerpt">
+                  {post.node.excerpt}
+                </p>
             </div>
           </div>
         ))}
       </div>
       <div className="page-navigation">
         {!isFirst && (
-          <Link to={prevPage} rel="prev">
+          <Link to={prevPage} rel="prev" style={{paddingRight: 50}}>
             ← Previous Page
           </Link>
         )}
@@ -60,14 +61,14 @@ const BlogPage = ({ data, pageContext }) => {
         {Array.from({ length: numPages }, (_, i) => (
           <Link
             key={`pagination-number${i + 1}`}
-            to={`${pathPrefix}/${i === 0 ? '' : i + 1}`}
+            to={`${"/blog"}/${i === 0 ? '' : i + 1}`}
+            style={{paddingRight: 10}}
           >
             {i + 1}
           </Link>
         ))}
-
         {!isLast && (
-          <Link to={nextPage} rel="next">
+          <Link to={nextPage} rel="next" style={{paddingleft: 60}}>
             Next Page →
           </Link>
         )}
