@@ -9,17 +9,19 @@ const Header = ({ siteTitle }) => (
       padding: `var(--space-4) var(--size-gutter)`,
       display: `flex`,
       textAlign: "center",
-      paddingTop: 50,
+      paddingTop: `var(--size-gutter)`,
       justifyContent: `space-between`,
-  
+      verticalAlign: "bottom",
+      width: '100%',
+      paddingLeft: `var(--space-6)` 
       
     }}
   >
     <Link
       to="/"
       style={{
-        fontSize: 23,
-        paddingLeft: 100,
+        fontSize: `var(--font-xl)`,
+        display: 'inlineblock'
       }}
     >
       {siteTitle}
@@ -40,8 +42,8 @@ const Header = ({ siteTitle }) => (
       <li 
         className = {navLinkItem}><Link to="/blog"
         style={{
-          fontSize: 20,
-          paddingRight: 130,
+          fontSize: `var(--font-xl)`,
+          display: 'inline-block'
         }}> 
         Blog
         </Link>
