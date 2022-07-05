@@ -13,7 +13,6 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-between`,
       verticalAlign: "bottom",
       width: '100%',
-      paddingLeft: `var(--space-6)` 
       
     }}
   >
