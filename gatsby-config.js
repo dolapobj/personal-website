@@ -49,8 +49,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `dolapo's pw`,
+        short_name: `dolapo-pw`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
