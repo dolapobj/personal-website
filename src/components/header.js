@@ -6,24 +6,27 @@ import {container, heading,navLinks,navLinkItem, navLinkText } from "./layout.mo
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      margin: `0 auto`,
       padding: `var(--space-4) var(--size-gutter)`,
       display: `flex`,
-      alignItems: `center`,
+      textAlign: "center",
+      paddingTop: 50,
       justifyContent: `space-between`,
+  
       
     }}
   >
     <Link
       to="/"
       style={{
-        fontSize: `var(--font-lg)`,
+        fontSize: 23,
+        paddingLeft: 100,
       }}
     >
       {siteTitle}
     </Link>
-    {/*
+    { 
     <ul className= {navLinks}>
+      {/*
       <li 
         className = {navLinkItem}><Link
         to="/about"
@@ -32,24 +35,20 @@ const Header = ({ siteTitle }) => (
         }}> 
         About
         </Link>
-      </li>
+      </li> 
+      */}
       <li 
         className = {navLinkItem}><Link to="/blog"
         style={{
-          fontSize: `var(--font-md)`,
+          fontSize: 20,
+          paddingRight: 130,
         }}> 
         Blog
         </Link>
       </li>
-      <li 
-        className = {navLinkItem}><Link to="/projects"style={{
-          fontSize: `var(--font-md)`,
-        }}> 
-        Projects
-        </Link>
-      </li>
+      
     </ul>
-      */}
+      }
   </header>
 )
 

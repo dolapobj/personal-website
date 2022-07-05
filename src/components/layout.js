@@ -41,7 +41,7 @@ const Layout = ({ pageTitle, pageHeading, children }) => {
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
-            gridArea: 'footer'
+            gridArea: 'footer',
           }}
         >
           

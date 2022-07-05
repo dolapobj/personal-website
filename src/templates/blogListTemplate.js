@@ -3,7 +3,7 @@ import { kebabCase } from 'lodash';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import { GatsbyImage}  from 'gatsby-plugin-image';
-import {container, heading,navLinks,navLinkItem, navLinkText } from "../components/layout.module.css"
+import {navLinks} from "../components/layout.module.css"
 
 const BlogPage = ({ data, pageContext }) => {
     const posts = data.allMarkdownRemark.edges;
@@ -53,7 +53,7 @@ const BlogPage = ({ data, pageContext }) => {
       </div>
       <div className="page-navigation">
         {!isFirst && (
-          <Link to={prevPage} rel="prev" style={{paddingRight: 50}}>
+          <Link to={prevPage} rel="prev" style={{paddingRight: 30}}>
             ← Previous Page
           </Link>
         )}
@@ -62,7 +62,7 @@ const BlogPage = ({ data, pageContext }) => {
           <Link
             key={`pagination-number${i + 1}`}
             to={`${"/blog"}/${i === 0 ? '' : i + 1}`}
-            style={{paddingRight: 10}}
+            style={{paddingRight: 20}}
           >
             {i + 1}
           </Link>
