@@ -54,11 +54,11 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `Dolapo Adedokun - website`,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `Dolapo Adedokun - Personal Website`,
         },
         {
           name: `twitter:creator`,
