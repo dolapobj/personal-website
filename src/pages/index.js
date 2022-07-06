@@ -17,7 +17,7 @@ const IndexPage = () => {
   <Layout pageHeading="Home Page" pageTitle = "Home">
      <Seo
         title="Home"
-        keywords={[`gatsby`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`]}
+        keywords={[`gatsby`, `dolapo adedokun`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`]}
       />
     <body>
     <div id='holder'>
