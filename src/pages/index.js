@@ -15,7 +15,10 @@ const IndexPage = () => {
   console.log(data);
   return ( (
   <Layout pageHeading="Home Page" pageTitle = "Home">
-    <Seo title="Home" keywords={[`MIT`, `computer science`, `CS`]} />
+     <Seo
+        title="Home"
+        keywords={[`gatsby`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`]}
+      />
     <body>
     <div id='holder'>
         <div id='left'></div>

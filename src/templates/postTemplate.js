@@ -2,12 +2,17 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-
+import Seo from '../components/seo';
 const PostTemplate = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
+      <Seo
+        title="Home"
+        keywords={[`gatsby`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`,
+        frontmatter.tags]}
+      />
       <section>
         <div>
           <h1>{frontmatter.title}</h1>
@@ -28,6 +33,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        tags
       }
     }
   }

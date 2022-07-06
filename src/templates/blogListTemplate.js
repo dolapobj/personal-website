@@ -4,6 +4,8 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import { GatsbyImage}  from 'gatsby-plugin-image';
 import {navLinks} from "../components/layout.module.css"
+import Seo from '../components/seo';
+
 
 const BlogPage = ({ data, pageContext }) => {
     const posts = data.allMarkdownRemark.edges;
@@ -19,6 +21,10 @@ const BlogPage = ({ data, pageContext }) => {
     : `${"../"}${(currentPage + 1).toString()}`;
     return (
         <Layout>
+          <Seo
+        title="Home"
+        keywords={[`gatsby`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`]}
+      />
           <h1> Blog </h1>
           <div className="post-list">
             {posts.map(post => (
