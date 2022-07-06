@@ -14,9 +14,9 @@ const IndexPage = () => {
   `)
   console.log(data);
   return ( (
-  <Layout pageHeading="Home Page" pageTitle = "Home">
+  <Layout pageHeading="Dolapo Adedokun - Home Page" pageTitle = "Dolapo Adedokun - Home">
      <Seo
-        title="Home"
+        title="Dolapo Adedokun"
         keywords={[`gatsby`, `dolapo adedokun`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`]}
       />
     <body>

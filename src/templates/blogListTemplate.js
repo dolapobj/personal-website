@@ -22,7 +22,7 @@ const BlogPage = ({ data, pageContext }) => {
     return (
         <Layout>
           <Seo
-        title="Home"
+        title="Dolapo Adedokun - Blog"
         keywords={[`gatsby`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`]}
       />
           <h1> Blog </h1>

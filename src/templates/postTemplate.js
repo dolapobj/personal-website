@@ -9,8 +9,8 @@ const PostTemplate = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="Home"
-        keywords={[`gatsby`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`,
+        title="Dolapo Adedokun"
+        keywords={[`gatsby`, `dolapo adedokun`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`,
         frontmatter.tags]}
       />
       <section>

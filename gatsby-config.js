@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `da`,
     description: `Dolapo's Personal Website!`,
-    author: `@dolapobj`,
+    author: `Dolapo Adedokun`,
     siteUrl: `https://dolapoadedokun.com`,
   },
   plugins: [
