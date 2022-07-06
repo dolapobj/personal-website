@@ -3,7 +3,7 @@ module.exports = {
     title: `da`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@dolapobj`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://dolapoadedokun.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
