@@ -32,6 +32,7 @@ const IndexPage = () => {
                 <li>Internal tool development at Slack</li>
                 <li>Improving data pipeline migration at Visa</li>
                 <li>Reinforcement learning at the MIT Quest for Intelligence</li>
+                <li> <a href= "https://www.exeter.edu/news/capturing-color"> Colored Seeds,</a> a photography project from 2018 </li>
             </ul>
             I love gospel and jazz guitar, piano, singing, and learning Japanese. Connect with me!
         </div>

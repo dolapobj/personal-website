@@ -25,6 +25,7 @@ const BlogPage = ({ data, pageContext }) => {
         title="Dolapo Adedokun - Blog"
         keywords={[`gatsby`, `application`, `react`, `dolapo`,`adedokun`,`blog`,`MIT`,`jazz`, `cs`, `computer science`]}
       />
+          <title> post.node.frontmatter.title</title>
           <h1> Blog </h1>
           <div className="post-list">
             {posts.map(post => (
