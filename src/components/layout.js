@@ -76,7 +76,7 @@ const Layout = ({ pageTitle, pageHeading, children }) => {
           /></a>
           {` `}
           <a href="https://github.com/dolapobj"> <StaticImage
-            src="../images/icons/GitHub.png"
+            src="../images/icons/github.png"
             alt="twitter"
             placeholder="blurred"
             layout="fixed"
