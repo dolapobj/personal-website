@@ -3,7 +3,7 @@ path: /blog/what-goes-up
 title: "What Goes Up"
 date: 2022-07-19
 thumbnail: "../../images/place-kitten1.jpeg"
-tags: ['mountain',"summer","mini-story"]
+tags: ['hiking',"summer","mini-story"]
 ---
 ---
   
