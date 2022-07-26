@@ -13,6 +13,9 @@ As I read Ferris's words, I was immediately brought back to my first year at MIT
 
 **Focus on Effectiveness.**
 
-Focusing on effectiveness though mandates regular reflection. It requires me to be patient and mindful enough to take a step back and honestly consider the tasks that bring me closer to my goals. *Easier said than done.* I love to feel productive, and often the easiest way to feel productive is by filling my schedule with "fluff" &mdash; indiscriminate activities that superficially seem relevant but really don't bring me closer to my goals. If I can focus on the few most effective tasks, I can free myself to do less overall work with even better results.
+I ask myself, *"Am I working for the sake of working right now?"*
+
+
+Focusing on effectiveness though mandates regular reflection. It requires me to be patient and mindful enough to take a step back and honestly consider the tasks that bring me closer to my goals. *Easier said than done.* I love to feel productive, and often the easiest way to feel productive is by filling my schedule with "fluff" &mdash; indiscriminate activities that superficially seem relevant but really don't bring me closer to my goals. If I can focus on the few most effective tasks, I can free myself to do less overall work with even better results. 
 
 *Smarter, not harder.*
