@@ -1,8 +1,7 @@
 ---
-path: /blog/effectiveness-efficiency
+path: /blog/2022/July/effectiveness-efficiency
 title: "Effectiveness vs Efficiency"
 date: 2022-07-26
-thumbnail: "../../images/place-kitten1.jpeg"
 tags: ['effectiveness',"efficiency","productivity"]
 ---
 ---

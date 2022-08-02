@@ -1,8 +1,7 @@
 ---
-path: /blog/what-goes-up
+path: /blog/2022/July/what-goes-up
 title: "What Goes Up Must Come Down"
 date: 2022-07-19
-thumbnail: "../../images/place-kitten1.jpeg"
 tags: ['hiking',"summer","mini-story"]
 ---
 ---

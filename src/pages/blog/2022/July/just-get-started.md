@@ -1,8 +1,7 @@
 ---
-path: /blog/just-get-started
-title: Just Get Started 
+path: /blog/2022/July/just-get-started
+title: "Just Get Started"
 date: 2022-07-05
-thumbnail: "../../images/place-kitten1.jpeg"
 tags: ['newton', 'productivity',"mini-blog"]
 ---
 ---

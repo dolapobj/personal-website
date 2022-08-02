@@ -104,14 +104,6 @@ query($skip: Int!, $limit: Int!) {
             date(formatString: "MMMM DD, YYYY")
             title
             tags
-            thumbnail {
-              childImageSharp { 
-                gatsbyImageData(
-                  width:200
-                  placeholder: BLURRED
-                  )
-              }
-            }
           }
         }
       }

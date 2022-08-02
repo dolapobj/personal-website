@@ -1,8 +1,7 @@
 ---
-path: /blog/the-magic-of-travel
+path: /blog/2022/July/the-magic-of-travel
 title: The Magic of Travel
 date: 2022-07-11
-thumbnail: "../../images/place-kitten1.jpeg"
 tags: ['travel', 'perspective',"mini-blog"]
 ---
 ---
