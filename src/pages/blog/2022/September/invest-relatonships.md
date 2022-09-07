@@ -2,7 +2,7 @@
 path: /blog/2022/September/invest-relatonships
 title: "Learning To Invest in Relationships"
 date: 2022-09-07
-tags: ['relatoniships', 'friends',"journal"]
+tags: ['relationships', 'friends',"journal"]
 ---
 ---
 
