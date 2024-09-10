@@ -24,10 +24,15 @@ const IndexPage = () => {
         
         <div id="holder">
           <div id="middle">
-            <h1> Hi! I'm Dolapo Adedokun.</h1>
-            <p>I'm a <a href="https://news.mit.edu/2021/adedolapo-adedokun-mitchell-scholar-1122"> Mitchell Scholar</a> at Trinity College Dublin and I studied CS at MIT.</p>
+            <div id="title-wrapper">
+              <h1> Hi! I'm Dolapo Adedokun.</h1>
+              <img id = "mobile-title-img" src="/thumb1.png" alt="Thumbnail"  />
+            </div>
+            <p>I'm a previous <a href="https://news.mit.edu/2021/adedolapo-adedokun-mitchell-scholar-1122"> Mitchell Scholar</a> at Trinity College Dublin in Artificial Intelligence and I studied CS at MIT. I'm currently a freelance developer, designer and AI consultant.  </p>
             <p>In the past I've worked on:</p>
             <ul>
+            <li>Driving AI initiatives as an AI product manager at Curriculum Associates</li>
+
               <li>Nonce Features in Reference Games (<a href={data.file.publicURL}><em>paper</em></a>)</li>
               <li>Reinventing internal data management at Salesforce</li>
               <li>Internal tool development at Slack</li>

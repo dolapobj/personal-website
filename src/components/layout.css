@@ -283,9 +283,104 @@ pre tt:after {
   height: 300px;
   max-width: 300px;
   max-height: 300px;
+
+  opacity: 0; /* Initially hidden */
+  animation: imageFadeIn 1.5s ease-in-out 1.5s forwards; /* Fade in after 2 seconds (after content fades in) */
+  transition: transform 0.3s ease-in-out; /* Prepare for hover effects */
 }
 
 
+
+
+#right img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/* Full-screen black cover */
+#black-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999; /* Ensure it's on top of everything */
+  animation: waveReveal 1.5s ease forwards; /* Quicker 1s animation */
+}
+
+/* Keyframes for a more circular wave-like reveal effect */
+@keyframes waveReveal {
+  0% {
+    transform: translateY(0); /* Start fully covering the screen */
+    visibility: visible;
+  }
+  50% {
+    transform: translateY(50%); /* Move halfway upward */
+    border-radius: 50% 50% 0 0; /* More circular wave effect */
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(100%); /* Completely move off the screen */
+    border-radius: 0; /* Reset to no border radius */
+    visibility: hidden;
+  }
+}
+
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Fully transparent */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+  }
+}
+
+
+#mobile-title-img {
+  display: none;
+}
+
+
+
+@media (max-width: 768px) {
+  
+  #middle {
+    min-width: 100%; 
+    overflow-x: hidden; 
+  }
+  #right {
+     display: none;
+    }
+
+#title-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#mobile-title-img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out; /* Prepare for hover effects */
+  border-radius: 50%; 
+  object-fit: cover; /* Ensures the image covers the whole circular area */
+  transition: transform 0.4s ease-in-out;
+  box-sizing: border-box;
+  margin-left: 1rem;
+  border: 2px solid #c59b6a;
+}
+
+  }
+
+  /* Animation */
 
 
 @keyframes imageAnimation {
@@ -295,12 +390,6 @@ pre tt:after {
   100% {
     transform: scale(1);
   }
-}
-
-#right img {
-  opacity: 0; /* Initially hidden */
-  animation: imageFadeIn 1.5s ease-in-out 1.5s forwards; /* Fade in after 2 seconds (after content fades in) */
-  transition: transform 0.3s ease-in-out; /* Prepare for hover effects */
 }
 
 @keyframes imageFadeIn {
@@ -327,57 +416,5 @@ pre tt:after {
   }
   50% {
     transform: translateY(-15px);
-  }
-}
-
-#right img:hover {
-  transform: scale(1.1);
-}
-
-
-@media (max-width: 768px) {
-  
-
-#right {
-   display: none;
-  }
-}
-
-
-/* Full-screen black cover */
-#black-cover {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  z-index: 9999; /* Ensure it's on top of everything */
-  animation: waveReveal 1.5s ease forwards; /* Quicker 1s animation */
-}
-
-/* Keyframes for a more circular wave-like reveal effect */
-@keyframes waveReveal {
-  0% {
-    transform: translateY(0); /* Start fully covering the screen */
-  }
-  50% {
-    transform: translateY(50%); /* Move halfway upward */
-    border-radius: 50% 50% 0 0; /* More circular wave effect */
-  }
-  100% {
-    transform: translateY(100%); /* Completely move off the screen */
-    border-radius: 0; /* Reset to no border radius */
-  }
-}
-
-
-/* Keyframes for the fade-in animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0; /* Fully transparent */
-  }
-  100% {
-    opacity: 1; /* Fully visible */
   }
 }
