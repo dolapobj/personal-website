@@ -26,7 +26,7 @@ const IndexPage = () => {
           <div id="middle">
             <div id="title-wrapper">
               <h1> Hi! I'm Dolapo Adedokun.</h1>
-              <img id = "mobile-title-img" src="/thumb1.png" alt="Thumbnail"  />
+              <img id = "mobile-title-img" src="/thumb2.png" alt="Thumbnail"  />
             </div>
             <p>I'm a previous <a href="https://news.mit.edu/2021/adedolapo-adedokun-mitchell-scholar-1122"> Mitchell Scholar</a> at Trinity College Dublin in Artificial Intelligence and I studied CS at MIT. I'm currently a freelance developer, designer and AI consultant.  </p>
             <p>In the past I've worked on:</p>
