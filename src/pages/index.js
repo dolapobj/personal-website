@@ -43,7 +43,7 @@ const IndexPage = () => {
             I love gospel and jazz guitar, piano, singing, and learning Japanese. Connect with me!
           </div>
           <div id="right">
-            <img src="/thumb1.png" alt="Thumbnail"  />
+            <img src="/thumb2.png" alt="Thumbnail"  />
           </div>
         </div>
       </div>
